@@ -1,5 +1,6 @@
 package com.uca.pncsegundoparcialcoworking.entities;
 
+import com.uca.pncsegundoparcialcoworking.utils.SpaceType;
 import jakarta.persistence.*;
 import lombok.*;
 import java.math.BigDecimal;

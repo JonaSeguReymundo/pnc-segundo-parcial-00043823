@@ -1,8 +1,8 @@
 package com.uca.pncsegundoparcialcoworking.dto.response;
 
-import com.uca.pncsegundoparcialcoworking.entities.SpaceType;
+import com.uca.pncsegundoparcialcoworking.utils.SpaceType;
+import lombok.Builder;
 import lombok.Data;
-import lombok.*;
 import java.math.BigDecimal;
 
 @Data

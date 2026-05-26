@@ -1,4 +1,4 @@
-package com.uca.pncsegundoparcialcoworking.entities;
+package com.uca.pncsegundoparcialcoworking.utils;
 
 public enum SpaceType {
     DESK,
