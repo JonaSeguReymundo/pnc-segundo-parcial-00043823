@@ -1,13 +1,16 @@
 package com.uca.pncsegundoparcialcoworking.dto;
 
 import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Setter
-@Getter
+import java.time.LocalDateTime;
+
+@Data
 @Builder
 public class GeneralResponse {
-    Object data;
-    String message;
+    private String uri;
+    private String message;
+    private int status;
+    private LocalDateTime time;
+    private Object data;
 }

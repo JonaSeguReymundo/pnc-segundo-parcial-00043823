@@ -1,6 +1,7 @@
 package com.uca.pncsegundoparcialcoworking.dto.request;
 
 import com.uca.pncsegundoparcialcoworking.utils.SpaceType;
+import com.uca.pncsegundoparcialcoworking.utils.validations.UniqueSpaceName;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
