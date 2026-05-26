@@ -1,42 +1,40 @@
 package com.uca.pncsegundoparcialcoworking.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
+import lombok.*;
 import java.math.BigDecimal;
 
-@Entity
-@Table(name = "space")
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "spaces")
 public class Space {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "name")
+    @Column(nullable = false, unique = true)
     private String name;
 
-    @Column(name = "type")
-    private Enum type;
+    private String description;
 
-    @Column(name = "capacity")
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private SpaceType type;
+
+    @Column(nullable = false)
     private Integer capacity;
 
-    @Column(name = "pricePerHour")
+    @Column(nullable = false, precision = 10, scale = 2)
     private BigDecimal pricePerHour;
 
-    @Column(name="available")
+    @Column(nullable = false)
     private Boolean available;
 
-    @Column(name="floor")
+    @Column(nullable = false)
     private Integer floor;
 
-    @Column(name="amenities")
     private String amenities;
 }
